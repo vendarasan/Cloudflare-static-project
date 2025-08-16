@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Nova Static</title>
+  <meta name="description" content="About this static HTML/CSS template."/>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="badge">Nova</span> Static
+      </a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="h1">About this template</h1>
+      <p class="lead">Nova Static is a lightweight, accessible starter with zero dependencies. Use it for landing pages, portfolios, or documentation.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Semantic</h3>
+          <p>Headings, landmarks, and contrast-friendly colors support accessibility.</p>
+        </article>
+        <article class="card">
+          <h3>Customizable</h3>
+          <p>Change the palette via <span class="kbd">:root</span> CSS variables. Add sections with ready-made utility classes.</p>
+        </article>
+        <article class="card">
+          <h3>Portable</h3>
+          <p>Upload to any static host: GitHub Pages, Netlify, Vercel, or your own server.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="feature">
+        <div>
+          <h2>File structure</h2>
+          <p class="lead">Organized and tidy so you can find things quickly.</p>
+          <pre class="card" style="overflow:auto;padding:18px;"><code>.
+├── index.html
+├── about.html
+├── contact.html
+└── assets/
+    ├── css/
+    │   └── styles.css
+    └── img/
+        ├── wave.svg
+        └── grid.svg</code></pre>
+        </div>
+        <img src="assets/img/wave.svg" alt="" loading="lazy">
+      </div>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+      <span>© <span id="year"></span> Nova Static. All rights reserved.</span>
+      <span class="tag">Pure HTML + CSS</span>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>

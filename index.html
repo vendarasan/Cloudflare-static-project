@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nova Static — Minimal HTML/CSS Template</title>
+  <meta name="description" content="A clean, responsive static website template built with pure HTML and CSS."/>
+  <link rel="preload" href="assets/img/wave.svg" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="badge">Nova</span> Static
+      </a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="grid">
+        <div>
+          <h1 class="h1">Launch a sleek site with <span class="badge">pure HTML + CSS</span></h1>
+          <p class="lead">This starter gives you a beautiful, responsive design without any build tools or frameworks. Copy, customize, ship.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="cta primary" href="about.html">Explore Features →</a>
+            <a class="cta" href="contact.html"><span class="kbd">⌘</span> Contact us</a>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Fast by default</h3>
+              <p>No JavaScript required. Semantic HTML and modern CSS only.</p>
+            </article>
+            <article class="card">
+              <h3>Responsive grid</h3>
+              <p>Layouts that scale gracefully on phones, tablets, and desktops.</p>
+            </article>
+            <article class="card">
+              <h3>Easy theming</h3>
+              <p>Edit CSS variables to change colors and accents in seconds.</p>
+            </article>
+          </div>
+        </div>
+        <div aria-hidden="true">
+          <img src="assets/img/wave.svg" alt="" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="feature">
+        <img src="assets/img/grid.svg" alt="Decorative grid art" loading="lazy">
+        <div>
+          <h2>Polished sections out of the box</h2>
+          <p class="lead">Use cards, features, badges, and buttons that already look great. Swap text and images to match your brand.</p>
+          <a class="button" href="about.html">See how it’s built</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+      <span>© <span id="year"></span> Nova Static. All rights reserved.</span>
+      <span class="tag">Pure HTML + CSS</span>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>
